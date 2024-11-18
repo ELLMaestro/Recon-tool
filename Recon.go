@@ -6,7 +6,6 @@ import (
 	"fmt"
 	"os"
 	"os/exec"
-	"strings"
 	"sync"
 )
 
@@ -19,7 +18,6 @@ func main() {
 	domainPtr := flag.String("u", "", "Target domain (e.g., example.com)")
 	outputPtr := flag.String("o", "output.txt", "Output file name to save results")
 	threadsPtr := flag.Int("t", 10, "Number of threads for scanning")
-	verbose := flag.Bool("verbose", false, "Enable verbose output")
 	runAll := flag.Bool("all", true, "Run all tools (default)")
 	silent := flag.Bool("silent", false, "Run in silent mode (minimal output)")
 	generateHTML := flag.Bool("html", false, "Generate HTML report")
